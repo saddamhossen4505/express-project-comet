@@ -1,0 +1,22 @@
+
+
+.Slider_Table tr img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.Slider_form label img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+#upload_sliderIMG {
+    display: none;
+}
+
+
