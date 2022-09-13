@@ -1,0 +1,42 @@
+
+
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <a class="btn btn-sm btn-primary" href="/admin/blog">Back</a>
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2>Edit <%= blog.title %> Data</h2>
+                    <hr>
+                    <form action="/admin/blog/update/<%= blog.id %> " method="post" class="Slider_form" enctype="multipart/form-data">
+                        <div class="my-3">
+                            <label for="">Title</label>
+                            <input name="title" type="text" value="<%= blog.title %> " class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Discription</label>
+                            <input name="desc" type="text" value="<%= blog.desc %> " class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Photo</label>
+                            <label for="upload_sliderIMG">
+                                <img src="https://static.thenounproject.com/png/1156518-200.png" alt="">
+                            </label>
+                            <br>
+                            <img style="max-width: 100%;" id="preview_img" src="/images/blogPhoto/<%= blog.photo %> " alt="">
+                            <br>
+                            <input name="slider_img_upload" id="upload_sliderIMG" type="file" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <input type="submit" value="Updata-Now" class="btn btn-primary btn-sm w-100">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

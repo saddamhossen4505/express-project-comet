@@ -107,6 +107,7 @@ input:-webkit-autofill:focus {
 }
 a {
 	color: #0dd9f9;
+	text-decoration: none;
 }
 input,
 button,

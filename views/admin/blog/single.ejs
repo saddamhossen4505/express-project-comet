@@ -1,14 +1,15 @@
 
+
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <a class="btn btn-sm btn-primary" href="/admin/slider">Back</a>
+            <a class="btn btn-sm btn-primary" href="/admin/blog">Back</a>
             <div class="card shadow">
                 <div class="card-body text-center">
                     <h2>ID-No : <%= singleData.id %> </h2>
                     <h1>Title : <%= singleData.title %> </h1>
-                    <h3>subtitle : <%= singleData.subtitle %> </h3>
-                    <img style="max-width: 100%; border-radius: 10px; object-fit: cover;" src="/images/sliderImg/<%= singleData.photo %> " alt="">
+                    <h3>Discription : <%= singleData.desc %> </h3>
+                    <img style="max-width: 100%; border-radius: 10px; object-fit: cover;" src="/images/blogPhoto/<%= singleData.photo %> " alt="">
                 </div>
             </div>
         </div>

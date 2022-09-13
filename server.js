@@ -3,6 +3,7 @@ const colors = require('colors');
 const dotenv = require('dotenv');
 const expressLayouts = require('express-ejs-layouts');
 const adminRoute = require('./routes/adminRoute');
+const cometRoute = require('./routes/cometRoute');
 
 
 // Init Express.
@@ -32,6 +33,7 @@ app.set("layout", "layouts/app");
 
 // Connect Router.
 app.use('/admin', adminRoute);
+app.use('/page', cometRoute);
 
 
 // Create Server.

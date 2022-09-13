@@ -1,0 +1,35 @@
+
+    <section>
+      <div class="container">
+        <div class="single-product-details">
+          <div class="row">
+            <div class="col-md-6">
+              <div data-options="{&quot;animation&quot;: &quot;slide&quot;, &quot;controlNav&quot;: true}" class="flexslider nav-inside control-nav-dark">
+                <ul class="slides">
+                  <li>
+                    <img src="/images/productPhoto/<%= newProduct.photo %> " alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class="title mt-0">
+                <h2><%= newProduct.title %><span class="red-dot"></span></h2>
+                <p class="m-0">Free Shipping Worldwide</p>
+              </div>
+              <div class="single-product-price">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <h3><span>$<%= newProduct.price %></span></h3>
+                  </div>
+                  <div class="col-xs-6 text-right"><span class="rating-stars">              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of row-->
+        </div>
+      </div>
+    </section>
+  
